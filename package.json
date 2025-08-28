@@ -1,5 +1,5 @@
 {
-  "name": "@rocketify-fr/docuseal-mcp",
+  "name": "@rocketify-fr/docuseal-mcp-server",
   "version": "0.1.0",
   "description": "MCP server for DocuSeal document signing and template management. Works with both cloud and self-hosted instances.",
   "main": "build/index.js",
