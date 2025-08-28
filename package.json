@@ -1,0 +1,53 @@
+{
+  "name": "docuseal-mcp-server-rocketify",
+  "version": "1.0.0",
+  "description": "MCP server for DocuSeal document signing and template management. Works with both cloud and self-hosted instances.",
+  "main": "build/index.js",
+  "bin": {
+    "docuseal-mcp": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp", 
+    "docuseal", 
+    "document-signing", 
+    "templates", 
+    "pdf", 
+    "signatures", 
+    "claude", 
+    "model-context-protocol",
+    "self-hosted",
+    "document-management"
+  ],
+  "author": "Rocketify <contact@rocketify.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocketify/docuseal-mcp.git"
+  },
+  "homepage": "https://github.com/rocketify/docuseal-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/rocketify/docuseal-mcp/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "build/",
+    "README.md",
+    "LICENSE"
+  ]
+}
